@@ -111,7 +111,8 @@ local config = {
     send_timeout = 1000,                    --timeout while sending
     max_redirection = 5,                    --maximum retry attempts for redirection,
     max_connection_attempts = 1,            --maximum retry attempts for connection
-    auth = "pass"                           --set password while setting auth
+    username = "username"                   --set the user name when using a custom account
+    password = "password"                   --set password while setting auth
 }
 
 local redis_cluster = require "rediscluster"
